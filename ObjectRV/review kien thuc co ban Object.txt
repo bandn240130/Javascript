@@ -1,0 +1,45 @@
+có 2 cách khai báo object
+const objectLiteral = {};
+/dung literal la chu yeu /
+const objectConstructor = new Object();
+/hai cach truy xuat gia tri/
+1. dot notation object.key
+2. bracket notation ["key"] ( dung cho may key dac biet co dau - )
+/thay doi gia tri cua object /
+/xoa gia tri trong object/
+***delete truyen vao key
+///for of dung cho mang, for in dung cho object///
+for in: duyet qua cac key trong objec
+for (let key in student) {
+    console.log(`${key}:${value}`);
+}
+/////////Cac phuong thuc trong Object co san/////////////
+* Object.keys ()- tra ve 1 mang chua tat ca cac keys cua object
+* Object.values ()- tra ve 1 mang chua tat ca cac gia tri 
+* Object.entries () - tra ve 1 mang chua nhieu mang bao gom ca key va values
+* Object.assign()- gop nhieu object lai voi nhau ( giong nhu dung CONCAT doi voi mang)
+{...a, ...b}
+* Object.freeze()- khong cho chinh sua keys  va value
+* Object.seal()- cho phep chinh sua nhung khong cho phep them vao
+
+*** nen sao chep ra de sua chu khong nen dung Object ban dau
+( dung spread operator hoac dung object.assign)
+
+
+**** copy nested Object copy cac object phuc tap nhieu tang
+ dung` JSON.stringify() bien object thanh chuoi json
+ dung JSON. parse bien thanh object ban dau
+ const new = JSON.parse(JSON.stringify(new1));
+
+ ***** this keyword ( de cap den Object gan nhat)
+ /* Optional chaining ( dung dau cham ? [ neu co])- thay the check if
+ /*** Destructuring Object ( code ngan gon hon)
+ const {bmw, civic, mec} = car;
+ thay vi khai bao bien tung cai const bmw = car ...
+ {...rest} la nhung thu con lai
+ /** function with object parameter
+   - khong can nho thu tu cac parameter
+   fn whatYOurCar(obj){}
+/** object destructuring parameter
+//**** hasOwnOrioerty(key)-> neu object chua key tra ve true va nguoc lai
+  
